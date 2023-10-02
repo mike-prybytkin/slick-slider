@@ -35,3 +35,28 @@
 .slick-dots li.slick-active button {
   background-color: brown;
 }
+
+/* BUTTON-LINEAR */
+
+.button-linear {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.button-linear button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 40px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.515);
+  background-image: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(9,82,121,1) 78%, rgba(2,0,36,1) 100%);
+  background-size: 100% 100%;
+  transition: all .5s ease-in-out;
+}
+
+.button-linear button:hover {
+  background-size: 300% 100%;
+  background-position: 100%;
+  transition: all .5s ease-in-out;
+}
