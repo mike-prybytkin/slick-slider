@@ -1,0 +1,61 @@
+.frame-wrapper {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50%;
+}
+
+.frame {
+  position: relative;
+  width: 200px;
+  height: 600px;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+.frame_1 {
+  transform: skew(-20deg);
+}
+
+.frame_2 {
+  transform: skew(20deg);
+}
+
+.frame::after {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 220%;
+  height: 100%;
+  content: '';
+  background: url("https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.frame_1::after {
+  transform: skew(20deg);
+}
+
+.frame_2::after {
+  transform: skew(-20deg);
+}
+
+.trapezoid-mask,
+.trapezoid-mask_rotate {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.trapezoid-mask img,
+.trapezoid-mask_rotate img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(40% 0, 100% 0, 60% 100%, 0% 100%);
+}
+
+.trapezoid-mask_rotate img {
+  transform: scaleX(-1);
+}
