@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+.scene {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 100%;
+}
+
+.layer_bg {
+  background: url('../img/clouds-3.png') no-repeat center;
+  background-size: cover;
+  top: -10%;
+}
+
+.layer_0 {
+  background: url('../img/mountains-2.png') no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: -25%;
+}
+
+.layer_1 {
+  background: url('../img/moutains.png') no-repeat center;
+  background-size: cover;
+}
+
+.layer_2 {
+  background: url('../img/field.png') no-repeat center;
+  background-size: cover;
+}
+
+.layer.layer_3 {
+  height: auto;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  background: url('../img/tourists.png') no-repeat;
+  background-size: cover;
+}
