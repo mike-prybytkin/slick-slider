@@ -1,0 +1,95 @@
+.grid-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: fit-content;
+  display: grid;
+  grid-template-rows: repeat(7, 200px);
+  grid-template-columns: repeat(3, 200px);
+}
+
+.grid__item {
+  position: relative;
+}
+.grid__item_1 {
+  background: #7d7c7c;
+  grid-area: 1 / 1 / 2 / 3;
+}
+.grid__item_2 {
+  background: #616161;
+}
+.grid__item_3 {
+  background: #a0a0a0;
+}
+.grid__item_4 {
+  background: #d30000;
+}
+.grid__item_5 {
+  background: #ff4d4d;
+  grid-area: 2 / 3 / span 2 / span 1;
+}
+.grid__item_6 {
+  background: #ff3838;
+  grid-area: 3 / 1 / span 2 / span 2;
+}
+.grid__item_7 {
+  background: #ff1a1a;
+}
+.grid__item_8 {
+  background: #1a76ff;
+  grid-area: 5 / 1 / span 1 / span 3;
+}
+.grid__item_9 {
+  background: #4c94ff;
+}
+.grid__item_10 {
+  background: #00265f;
+}
+.grid__item_11 {
+  background: #0045ad;
+}
+.grid__item_12 {
+  background: #28ad00;
+}
+.grid__item_13 {
+  background: #114800;
+}
+.grid__item_14 {
+  background: #0a2c00;
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+}
+
+.arrow_left::before {
+  top: 20px;
+  left: -70px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.arrow_right::before {
+  top: 20px;
+  right: -70px;
+  clip-path: polygon(0 0, 0 100%, 50% 50%);
+}
+
+.arrow_bottom::before {
+  bottom: -70px;
+  left: 20px;
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.arrow_top::before {
+  top: -70px;
+  left: 20px;
+  clip-path: polygon(0 100%, 100% 100%, 50% 50%);
+}

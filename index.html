@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/prallax.css">
   <link rel="stylesheet" href="./style/intersection-observer.css">
+  <link rel="stylesheet" href="./style/grip.css">
   <title>Slick slider</title>
 </head>
 
@@ -81,11 +82,47 @@
     <div class="intersection-observer__item"></div>
   </div>
 
+  <div class="grid-wrapper">
+    <div class="grid">
+      <div class="grid__item grid__item_1"></div>
+      <div class="grid__item grid__item_2 arrow arrow_left"></div>
+      <div class="grid__item grid__item_3"></div>
+      <div class="grid__item grid__item_4 arrow arrow_right"></div>
+      <div class="grid__item grid__item_5"></div>
+      <div class="grid__item grid__item_6"></div>
+      <div class="grid__item grid__item_7 arrow arrow_bottom"></div>
+      <div class="grid__item grid__item_8"></div>
+      <div class="grid__item grid__item_9 arrow arrow_bottom"></div>
+      <div class="grid__item grid__item_10"></div>
+      <div class="grid__item grid__item_11 arrow arrow_bottom"></div>
+      <div class="grid__item grid__item_12"></div>
+      <div class="grid__item grid__item_13 arrow arrow_top"></div>
+      <div class="grid__item grid__item_14"></div>
+    </div>
+  </div>
+
+  <div class="svg-line">
+    <svg id="svg-img" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800">
+      <g>
+        <path stroke-width="3" stroke="hsl(227, 71%, 57%)" fill="none" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="10 10" transform="matrix(1,0,0,1,-240,-239)" d="M250 250Q571 316 400 400Q295 476 550 550 " marker-end="url(#SvgjsMarker1937)"></path>
+      </g>
+      <defs>
+        <marker markerWidth="5.5" markerHeight="5.5" refX="2.75" refY="2.75" viewBox="0 0 5.5 5.5" orient="auto"
+          id="SvgjsMarker1937">
+          <polygon points="0,5.5 2.75,2.75 0,0 5.5,2.75" fill="hsl(227, 71%, 57%)"></polygon>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/slick.min.js"></script>
   <script src="./script/script.js"></script>
   <script src="./script/prallax.js"></script>
   <script src="./script/intersection-observer.js"></script>
+  <script src="./script/svg-animate.js"></script>
 </body>
 
 </html>
