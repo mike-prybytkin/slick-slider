@@ -1,0 +1,56 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.progress__item {
+  position: relative;
+  background: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.progress__item::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background: gray;
+  top: -30px;
+  left: calc(50% - 2px);
+}
+
+.progress__item:first-of-type:before {
+  display: none;
+}
+
+.progress .progress__item {
+  background: rgb(145, 255, 0);
+}
+
+.progress .progress__item::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background: green;
+  top: -30px;
+  left: calc(50% - 2px);
+}
+
+.progress .progress__item.progress__item_active ~ .progress__item {
+  background: red;
+}
+
+.progress .progress__item.progress__item_active ~ .progress__item::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background: gray;
+  top: -30px;
+  left: calc(50% - 2px);
+}
