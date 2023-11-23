@@ -3,8 +3,7 @@ const lineLength = svgImgPath.getTotalLength();
 
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  console.log(scrollPosition);
-  var dashOffset = lineLength - (scrollPosition % (2 * lineLength));
+  const dashOffset = lineLength - (scrollPosition % (2 * lineLength));
   svgImgPath.style.strokeDashoffset = dashOffset;
 });
 
