@@ -23,8 +23,24 @@ const svgImgPath = document.querySelector('#svg-img path');
   const svgHeight = svg.getBoundingClientRect().height;
   const windowHeight = window.innerHeight;
   const maxDashedLength = svgHeight + windowHeight; // Максимальная длина штриховой линии
-  console.log(maxDashedLength)
+  // console.log(maxDashedLength)
 
   const dashedLength = Math.min(scrollPosition, maxDashedLength);
   dashedLine.setAttribute('stroke-dasharray', `${scrollSvg}% ${100}%`);
 }
+
+let num = 0;
+window.addEventListener('wheel', (e) => {
+  if (e.deltaY > 0) {
+    num += 10;
+  } else {
+    num -= 10;
+  }
+  const newLine = document.querySelector('.example');
+  const newLineAnim = newLine.querySelector('animate');
+  newLineAnim.setAttribute('by', `${num}`);
+  newLineAnim.beginElement();
+  
+  console.log(newLineAnim)
+
+});
